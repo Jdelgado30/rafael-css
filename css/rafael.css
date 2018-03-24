@@ -2373,6 +2373,9 @@ table:not([class*="text-"]) th {
       -webkit-box-shadow: 0 0 0 0.15rem rgba(255, 56, 96, 0.25);
       box-shadow: 0 0 0 0.125em rgba(255, 56, 96, 0.25);
   }
+.btn-secondary.active:focus:not(:disabled):not(.disabled), .btn-secondary:active:focus:not(:disabled):not(.disabled), .show > .btn-secondary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 .2rem rgba(108,117,125,.5);
+}
   .ra-button:not([disabled]):not([class*="ra-button-"]):hover, .ra-button.hovered {
     background-color: rgb(202,203,205);
     background-image: none;
@@ -2387,7 +2390,6 @@ table:not([class*="text-"]) th {
   }
   .ra-button-info:hover {
       background-color: rgb(23, 170, 252);
-      border-color: transparent;
       color: rgb(255, 255, 255);
   }
   .ra-button-info:focus:not(:active) {
@@ -2400,7 +2402,6 @@ table:not([class*="text-"]) th {
   }
   .ra-button-success:hover, .ra-button-success .hovered {
       background-color: rgb(34, 198, 91);
-      border-color: transparent;
       color: rgb(255, 255, 255);
   }
   .ra-button-link {
