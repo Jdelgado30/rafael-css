@@ -339,6 +339,9 @@ table:not([class*="text-"]) th {
 .vertical.ra-divider::before {
     top: -100%;
 }
+.vertical.ra-divider::after {
+   top: 10%;
+}
 .vertical.ra-divider::after, .vertical.ra-divider::before {
     position: absolute;
     left: 50%;
