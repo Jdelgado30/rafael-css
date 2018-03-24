@@ -87,7 +87,7 @@ th {
 }
 
 html {
-  background-color: rgb(250,250,250);
+  background-color: rgb(220,220,220);
   font-size: 16px;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -252,6 +252,111 @@ table:not([class*="text-"]) th {
       width: 100% !important;
   }
 /*width*/
+/*icon*/
+  .header > .icon {
+    display: table-cell;
+    opacity: 1;
+    font-size: 1.5em;
+    padding-top: 0;
+    vertical-align: middle;
+  }
+/*icon*/
+/*divider*/
+.ra-divider {
+    margin: 1rem 0;
+    line-height: 1;
+    height: 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    color: rgba(0,0,0,.85);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+.ra-divider {
+    font-size: 1rem;
+}
+.ra-divider:not(.vertical):not(.horizontal) {
+    border-top: 1px solid rgba(34,36,38,.15);
+        border-top-color: rgba(34, 36, 38, 0.15);
+    border-bottom: 1px solid rgba(255,255,255,.1);
+        border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+.horizontal.ra-divider::after, .horizontal.ra-divider::before {
+    content: '';
+    display: table-cell;
+    position: relative;
+    top: 50%;
+    width: 50%;
+    background-repeat: no-repeat;
+}
+.horizontal.ra-divider::before {
+    background-position: right 1em top 50%;
+}
+.horizontal.ra-divider::after {
+    background-position: left 1em top 50%;
+}
+.horizontal.ra-divider::after, .horizontal.ra-divider::before {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABaAAAAACCAYAAACuTHuKAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo1OThBRDY4OUNDMTYxMUU0OUE3NUVGOEJDMzMzMjE2NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo1OThBRDY4QUNDMTYxMUU0OUE3NUVGOEJDMzMzMjE2NyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjU5OEFENjg3Q0MxNjExRTQ5QTc1RUY4QkMzMzMyMTY3IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU5OEFENjg4Q0MxNjExRTQ5QTc1RUY4QkMzMzMyMTY3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+VU513gAAADVJREFUeNrs0DENACAQBDBIWLGBJQby/mUcJn5sJXQmOQMAAAAAAJqt+2prAAAAAACg2xdgANk6BEVuJgyMAAAAAElFTkSuQmCC);
+}
+.ra-divider.inverted, .ra-divider.inverted::after, .ra-divider.inverted::before {
+    border-top-color: rgba(34,36,38,.15) !important;
+    border-left-color: rgba(34,36,38,.15) !important;
+    border-bottom-color: rgba(255,255,255,.15) !important;
+    border-right-color: rgba(255,255,255,.15) !important;
+}
+.horizontal.ra-divider {
+    display: table;
+    white-space: nowrap;
+    height: auto;
+    margin: '';
+    line-height: 1;
+    text-align: center;
+}
+.ra-column + .vertical.ra-divider {
+    height: calc(50% - 1rem);
+}
+.ra-column + .ra-divider,.ra-column + .ra-divider {
+    right: left;
+}
+.vertical.ra-divider {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: 50%;
+    line-height: 0;
+    text-align: center;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+.vertical.ra-divider::before {
+    top: -100%;
+}
+.vertical.ra-divider::after, .vertical.ra-divider::before {
+    position: absolute;
+    left: 50%;
+    content: '';
+    z-index: 3;
+    border-left: 1px solid rgba(34,36,38,.15);
+    border-right: 1px solid rgba(255,255,255,.1);
+    width: 0%;
+    height: calc(100% - 1rem);
+}
+.ra-dividing {
+    padding-bottom: .21428571rem;
+    border-bottom: 1px solid rgba(34,36,38,.15);
+}
+.clearing.ra-divider {
+    clear: both;
+}
+/*divider*/
 /*hight*/
   .h-80 {
       height: 80% !important;
