@@ -502,7 +502,7 @@ table:not([class*="text-"]) th {
     position: relative;
     box-sizing: border-box;
     transition: box-shadow 0.1s ease-in-out;
-    background:rgb(255,255,255);
+    background:rgb(245,245,245);
   }
   .ra-card-body {
       padding: 40px 30px;
@@ -520,7 +520,7 @@ table:not([class*="text-"]) th {
   .ra-card-header {
     padding: 15px 30px;
     background:rgba(0,0,0,.050);
-    border-bottom:1px solid rgba(0,0,0,.052);
+    border-bottom:1px solid rgba(0,0,0,.051);
   }
   .ra-card-image {
       display: block;
@@ -529,7 +529,7 @@ table:not([class*="text-"]) th {
   .ra-card-footer {
       padding: 20px 30px;
       background:rgba(0,0,0,.050);
-      border-top:1px solid rgba(0,0,0,.052);
+      border-top:1px solid rgba(0,0,0,.051);
   }
   .ra-card-body::before, .ra-card-body::after, .ra-card-header::before, .ra-card-header::after, .ra-card-footer::before, .ra-card-footer::after {
       content: "";
@@ -582,6 +582,12 @@ table:not([class*="text-"]) th {
         background-color: rgb(242, 193, 7);
         border-top:1px solid rgb(239, 193, 7);
         color: rgb(255, 255, 255)!important;
+    }
+    .ra-card.bg-black .ra-card-footer{
+      background-color: rgba(255, 255, 255,.1);
+    }
+    .ra-card.bg-dark .ra-card-footer{
+      background-color: rgba(255, 255, 255,.045);
     }
   /*colors*/
   .ra-contact-card img {
@@ -2403,9 +2409,15 @@ table:not([class*="text-"]) th {
       color: rgb(255, 255, 255);
   }
   .ra-button-primary {
-      background-color: rgb(0, 209, 178);
+      background-color:rgb(10, 104, 241);
       border-color: transparent;
       color: rgb(255, 255, 255);
+  }
+  .ra-button-primary:hover {
+      background-color:rgb(10, 88, 241);
+  }
+  .ra-button-primary:focus {
+      box-shadow: 0 0 0 .20rem rgba(10, 104, 241,.4);
   }
   .ra-button-black {
       background-color: rgb(10, 10, 10);
@@ -2423,28 +2435,25 @@ table:not([class*="text-"]) th {
       color: rgb(54, 54, 54);
   }
   .ra-button-danger {
-      background-color: rgb(255, 56, 96);
+      background-color: rgb(252, 56, 56);
       border-color: transparent;
       color: rgb(255, 255, 255);
   }
   .ra-button-danger:focus:not(:active), .ra-button.bg-danger.focused:not(:active) {
-      -webkit-box-shadow: 0 0 0 0.20rem rgba(255, 56, 96, 0.25);
-      box-shadow: 0 0 0 0.20em rgba(255, 56, 96, 0.25);
+      -webkit-box-shadow: 0 0 0 0.20rem rgba(252, 56, 96, 0.4);
+      box-shadow: 0 0 0 0.20em rgba(252, 56, 96, 0.4);
   }
   .ra-button-warning {
-      background-color: rgb(255, 221, 87);
+      background-color: rgb(255, 193, 7);
       border-color: transparent;
       color: rgba(0, 0, 0, 0.7);
   }
   .ra-button-warning:hover, .ra-button-warning .hovered {
-      background-color: rgb(255, 219, 74);
-      border-color: transparent;
+      background-color: rgb(255, 180, 7);
       color: rgba(0, 0, 0, 0.7);
   }
-
-  .ra-button-danger:focus, .ra-button-danger.focused {
-      border-color: transparent;
-      color: rgb(255, 255, 255);
+  .ra-button-warning:focus, .ra-button-warning.focused {
+    box-shadow: 0 0 0 0.20em rgba(255, 193, 7,.40);
   }
   .ra-button[class*="left floated"], .ra-buttons[class*="left floated"] {
       float: left;
