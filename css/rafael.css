@@ -2477,10 +2477,6 @@ table:not([class*="text-"]) th {
       vertical-align: baseline;
       margin: 0 .25em 0 0;
   }
-  .ra-buttons:not(.basic):not(.inverted) {
-      -webkit-box-shadow: none;
-      box-shadow: none;
-  }
   .ra-buttons .ra-button {
       -webkit-box-flex: 1;
       -ms-flex: 1 0 auto;
@@ -2504,10 +2500,6 @@ table:not([class*="text-"]) th {
   .ra-buttons .ra-button:last-child {
       border-top-right-radius: .28571429rem;
       border-bottom-right-radius: .28571429rem;
-  }
-  .ra-buttons:not(.basic):not(.inverted) > .ra-button, .ra-buttons > .ra-button:not(.basic):not(.inverted) {
-      -webkit-box-shadow: 0 0 0 1px transparent inset,0 0 0 0 rgba(34,36,38,.15) inset;
-      box-shadow: 0 0 0 1px transparent inset,0 0 0 0 rgba(34,36,38,.15) inset;
   }
   .ra-buttons .or {
       position: relative;
