@@ -2695,6 +2695,10 @@ table:not([class*="text-"]) th {
 		background-color: rgb(0, 0, 0);
 		color: rgb(255, 255, 255);
 	}
+	.bg-cyan{
+		background-color: rgb(0,240,240);
+		color:rgb(255,255,255);
+	}
 	.bg-rainbow {
 		color:rgba(255,255,255,.8);
 	    -webkit-animation: rainbow 8s ease infinite;
