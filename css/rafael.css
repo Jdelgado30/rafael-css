@@ -3065,3 +3065,8 @@ table:not([class*="text-"]) th {
 		content: "\2014 \00A0";
 	}
 /*blockquote*/
+/*form*/
+  .ra-form input{
+    padding: 2px;
+  }
+/*form*/
