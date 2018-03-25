@@ -3066,7 +3066,9 @@ table:not([class*="text-"]) th {
 	}
 /*blockquote*/
 /*form*/
-  .ra-form input{
-    padding: 2px;
+  .ra-form{
+    padding: 4px;
+    color:rgb(200,200,200);
+    border:none;
   }
 /*form*/
