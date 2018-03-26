@@ -3071,4 +3071,14 @@ table:not([class*="text-"]) th {
     color:rgb(200,200,200);
     border: .04rem solid rgba(150,150,150,.5);
   }
+  .ra-form:focus{
+    padding: .65em 1em;
+    color:rgb(100,100,100);
+    border-color:rgb(50,90,190);
+    -webkit-transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+       -moz-transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+        -ms-transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+         -o-transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+            transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  }
 /*form*/
