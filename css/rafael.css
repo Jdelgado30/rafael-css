@@ -3066,12 +3066,12 @@ table:not([class*="text-"]) th {
 	}
 /*blockquote*/
 /*form*/
-  .ra-form{
+  input.ra-input,.ra-input input{
     padding: .65em 1em;
     color:rgb(200,200,200);
     border: .04rem solid rgba(150,150,150,.5);
   }
-  .ra-form:focus{
+  input.ra-input:focus,.ra-input input:focus{
     padding: .65em 1em;
     color:rgb(100,100,100);
     border-color: rgb(146,184,255);
@@ -3082,20 +3082,68 @@ table:not([class*="text-"]) th {
          -o-transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
             transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
   }
-  .ra-form.disabled, input[disabled] {
+  input.ra-input.disabled, .ra-input:not(.disabled) input[disabled] {
       opacity: .45;
   }
-  .ra-form.disabled, input[disabled] {
+  input.ra-input.disabled,.ra-input:not(.disabled) input[disabled] {
       pointer-events: none;
   }
   /*styles*/
-    .ra-form.error{
+    input.ra-input.error, .ra-input.error input{
       border-color:rgb(190,100,100);
       background: rgba(190,20,20,.2);
     }
-    .ra-form.error:focus{
+    input.ra-input.error:focus, .ra-input.error input{
       border-color:rgb(210,20,20);
       box-shadow: 0 0 0 .10rem rgba(210,20,20,.5);
     }
   /*styles*/
+  .ra-input-group{
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    width: 100%;
+  }
+    .ra-input-group-before,.ra-input-group-after {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+    }
+    .ra-input-group-before{
+      margin-right: -1px;
+    }
+    .ra-input-group-text {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        padding: .5833em .833em;
+        margin-bottom: 0;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: rgb(73, 80, 87);
+        text-align: center;
+        white-space: nowrap;
+        background-color: rgba(230,230,230,1);
+        border-radius: .25rem;
+        border-top-right-radius: 0.25rem;
+        border-bottom-right-radius: 0.25rem;
+    }
+    .ra-input-group > .ra-input-group-before > .ra-input-group-text {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+    .ra-input-group > .ra-input-group-after > .ra-input-group-text {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
 /*form*/
