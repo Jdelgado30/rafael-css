@@ -3074,11 +3074,22 @@ table:not([class*="text-"]) th {
   .ra-form:focus{
     padding: .65em 1em;
     color:rgb(100,100,100);
-    border-color: rgb(128, 189, 255);
+    border-color: rgb(146,184,255);
+    box-shadow: 0 0 0 .10rem rgba(129,192,255,.5);
     -webkit-transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
        -moz-transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
         -ms-transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
          -o-transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
             transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
   }
+  /*styles*/
+    .ra-form.error{
+      border-color:rgb(190,100,100);
+      background: rgba(190,20,20,.2);
+    }
+    .ra-form.error:focus{
+      border-color:rgb(210,20,20);
+      box-shadow: 0 0 0 .10rem rgba(210,20,20,.5);
+    }
+  /*styles*/
 /*form*/
