@@ -3082,6 +3082,12 @@ table:not([class*="text-"]) th {
          -o-transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
             transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
   }
+  .ra-form.disabled, input[disabled] {
+      opacity: .45;
+  }
+  .ra-form.disabled, input[disabled] {
+      pointer-events: none;
+  }
   /*styles*/
     .ra-form.error{
       border-color:rgb(190,100,100);
