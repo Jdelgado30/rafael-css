@@ -3066,16 +3066,25 @@ table:not([class*="text-"]) th {
 	}
 /*blockquote*/
 /*form*/
+  .ra-input-sm,.ra-input-group-sm > .ra-input, .ra-input-group-sm > .ra-input-group-after > .ra-button, .ra-input-group-sm > .ra-input-group-after > .ra-input-group-text, .ra-input-group-sm > .ra-input-group-before > .ra-button, .ra-input-group-sm > .ra-input-group-before > .ra-input-group-text{
+    padding: .25rem .5rem;
+    font-size: .875rem;
+    line-height: 1.5;
+  }
+  .ra-input-lg,.ra-input-group-lg > .ra-input, .ra-input-group-lg > .ra-input-group-after > .ra-button, .ra-input-group-lg > .ra-input-group-after > .ra-input-group-text, .ra-input-group-lg > .ra-input-group-before > .ra-button, .ra-input-group-lg > .ra-input-group-before > .ra-input-group-text{
+    padding: .5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+  }
   input.ra-input,.ra-input input{
     padding: .65em 1em;
     color:rgb(200,200,200);
     border: .04rem solid rgba(150,150,150,.5);
   }
   input.ra-input:focus,.ra-input input:focus{
-    padding: .65em 1em;
     color:rgb(100,100,100);
     border-color: rgb(146,184,255);
-    box-shadow: 0 0 0 .10rem rgba(129,192,255,.5);
+    box-shadow: 0 0 0 .12rem rgba(129,192,255,.5);
     -webkit-transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
        -moz-transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
         -ms-transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
@@ -3118,6 +3127,9 @@ table:not([class*="text-"]) th {
     .ra-input-group-before{
       margin-right: -1px;
     }
+    .ra-input-group-after{
+      margin-left: 0px;
+    }
     .ra-input-group-text {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -3125,12 +3137,12 @@ table:not([class*="text-"]) th {
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
-        padding: .5833em .833em;
+        padding: .5833em .95em;
         margin-bottom: 0;
         font-size: 1rem;
         font-weight: 400;
         line-height: 1.5;
-        color: rgb(73, 80, 87);
+        color: rgba(0, 0, 0,.5);
         text-align: center;
         white-space: nowrap;
         background-color: rgba(230,230,230,1);
@@ -3141,6 +3153,9 @@ table:not([class*="text-"]) th {
     .ra-input-group > .ra-input-group-before > .ra-input-group-text {
       border-top-right-radius: 0;
       border-bottom-right-radius: 0;
+    }
+    .ra-input-group > .ra-input:focus {
+        z-index: 3;
     }
     .ra-input-group > .ra-input-group-after > .ra-input-group-text {
       border-top-left-radius: 0;
