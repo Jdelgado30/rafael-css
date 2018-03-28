@@ -3031,6 +3031,9 @@ table:not([class*="text-"]) th {
       box-shadow: 0 0 0 .10rem rgba(210,20,20,.5);
     }
   /*styles*/
+  .ra-input  > .ra-button:last-child, .ra-input > .ra-buttons:last-child > .ra-button, .ra-input > .dropdown:last-child {
+      border-radius: 0 .28571429rem .28571429rem 0;
+  }
   .ra-input-group{
     position: relative;
     display: -webkit-box;
